@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas | Desarrollo Web Profesional</title>
+    <!-- Tailwind CSS cargado directamente en la nube -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- 1. HEADER & NAVEGACIÓN -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-xl font-bold tracking-tight text-slate-900">
+                    Lucas<span class="text-blue-600">.Dev</span>
+                </span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#inicio" class="hover:text-blue-600 transition">Inicio</a>
+                <a href="#servicios" class="hover:text-blue-600 transition">Servicios</a>
+                <a href="#proyectos" class="hover:text-blue-600 transition">Portafolio</a>
+            </nav>
+            <div>
+                <a href="https://wa.me/34600215072?text=Hola%20Lucas,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20cotizar%20una%20p%C3%A1gina%20web%20para%20mi%20negocio." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition">
+                    Contactar
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section id="inicio" class="relative bg-white pt-20 pb-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700 mb-5">
+                    Desarrollo Web Profesional para tu Negocio
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-none mb-6">
+                    Lleva tu negocio al entorno digital y <span class="text-blue-600">multiplica tus ventas</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-500 max-w-2xl mb-8 leading-relaxed">
+                    Diseño y desarrollo páginas web modernas, veloces y adaptadas al 100% para dispositivos móviles. Soluciones digitales punta a punta enfocadas en resultados comerciales reales.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                    <a href="https://wa.me/34600215072?text=Hola%20Lucas,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20cotizar%20una%20p%C3%A1gina%20web%20para%20mi%20negocio." 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-xl text-white bg-blue-600 hover:bg-blue-700 shadow-md transition">
+                        💬 Cotizar por WhatsApp
+                    </a>
+                    <a href="#proyectos" 
+                       class="inline-flex items-center justify-center px-6 py-3 border border-slate-300 text-base font-medium rounded-xl text-slate-700 bg-white hover:bg-slate-50 transition">
+                        Ver Proyectos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SERVICIOS -->
+    <section id="servicios" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">¿Qué soluciones aporto a tu empresa?</h2>
+                <p class="mt-4 text-lg text-slate-500">Me encargo de toda la infraestructura técnica para que puedas concentrarte en atender tus nuevas solicitudes de servicio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="text-2xl mb-4">💻</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Sitios Corporativos</h3>
+                    <p class="text-slate-500 leading-relaxed">Arquitecturas a medida y código limpio adaptado exactamente a las necesidades operativas de tu marca o estudio profesional.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="text-2xl mb-4">📱</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Diseño Responsive</h3>
+                    <p class="text-slate-500 leading-relaxed">Tu sitio web cargará instantáneamente en teléfonos móviles, maximizando la retención de usuarios y potenciales compradores.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="text-2xl mb-4">🛒</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">E-Commerce Avanzado</h3>
+                    <p class="text-slate-500 leading-relaxed">Pasarelas automáticas de compra, bases de datos dinámicas y manejo seguro de perfiles para automatizar tus canales de venta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CUADRÍCULA DE PROYECTOS -->
+    <section id="proyectos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl tracking-tight">Prototipos y Casos de Éxito</h2>
+                <p class="mt-3 text-lg text-slate-500 max-w-2xl">Muestras reales del alcance de las plataformas que puedo estructurar, diseñar y desplegar para tu negocio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Proyecto 1 -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-8 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl">🛒</span>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-200/60 px-2.5 py-1 rounded-md">Full-Stack Avanzado</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Plataforma E-Commerce Profesional</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Tienda online integral con catálogo dinámico de productos, sistema de autenticación segura (JWT) y roles diferenciados para clientes y administradores.</p>
+                        <div class="flex flex-wrap gap-1.5 mb-8">
+                            <span class="text-xs bg-white text-slate-600 border border-slate-200 px-2.5 py-1 rounded-md font-medium">React</span>
+                            <span class="text-xs bg-white text-slate-600 border border-slate-200 px-2.5 py-1 rounded-md font-medium">Flask</span>
+                            <span class="text-xs bg-white text-slate-600 border border-slate-200 px-2.5 py-1 rounded-md font-medium">JWT</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-200">
+                        <a href="https://iiiilucasiiii.github.io/tienda-online/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium rounded-lg text-white bg-slate-900 hover:bg-slate-800 transition">🔗 Demo en Vivo</a>
+                        <a href="https://github.com/IIIILUCASIIII/tienda-online" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium rounded-lg text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 transition">🛠️ Código</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-8 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl">🍕</span>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-200/60 px-2.5 py-1 rounded-md">Landing Page Corporativa</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Sitio Web para Restaurantes y Gastronomía</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Diseño elegante y de alta conversión interactiva para cartas y menús digitales, optimizado para captar reservas directo al local.</p>
+                        <div class="flex flex-wrap gap-1.5 mb-8">
+                            <span class="text-xs bg-white text-slate-600 border border-slate-200 px-2.5 py-1 rounded-md font-medium">HTML5</span>
+                            <span class="text-xs bg-white text-slate-600 border border-slate-200 px-2.5 py-1 rounded-md font-medium">CSS3</span>
+                            <span class="text-xs bg-white text-slate-600 border border-slate-200 px-2.5 py-1 rounded-md font-medium">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-200">
+                        <a href="https://iiiilucasiiii.github.io/Restaurante/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium rounded-lg text-white bg-slate-900 hover:bg-slate-800 transition">🔗 Demo en Vivo</a>
+                        <a href="https://github.com/IIIILUCASIIII/Restaurante" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium rounded-lg text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 transition">🛠️ Código</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-8 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl">✨</span>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-200/60 px-2.5 py-1 rounded-md">Solución de Negocio</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Portal para Centros de Estética y Spas</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Estructura moderna pensada para clínicas estéticas, priorizando la visualización estética de tratamientos y captura ágil de clientes.</p>
+                        <div class="flex flex-wrap gap-1.5 mb-8">
+                            <span class="text-xs bg-white text-slate-600 border border-slate-200 px-2.5 py-1 rounded-md font-medium">React</span>
+                            <span class="text-xs bg-white text-slate-600 border border-slate-200 px-2.5 py-1 rounded-md font-medium">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-200">
+                        <a href="https://iiiilucasiiii.github.io/Centros-de-Est-tica-Cl-nicas-o-Spas/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium rounded-lg text-white bg-slate-900 hover:bg-slate-800 transition">🔗 Demo en Vivo</a>
+                        <a href="https://github.com/IIIILUCASIIII/Centros-de-Est-tica-Cl-nicas-o-Spas" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium rounded-lg text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 transition">🛠️ Código</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-8 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl">💼</span>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-200/60 px-2.5 py-1 rounded-md">Sitio Corporativo</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Web Corporativa para Estudios Profesionales</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6">Estructura institucional robusta para firmas de consultoría, asesorías o despachos legales, orientada a construir autoridad local en internet.</p>
+                        <div class="flex flex-wrap gap-1.5 mb-8">
+                            <span class="text-xs bg-white text-slate-600 border border-slate-200 px-2.5 py-1 rounded-md font-medium">HTML5</span>
+                            <span class="text-xs bg-white text-slate-600 border border-slate-200 px-2.5 py-1 rounded-md font-medium">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-200">
+                        <a href="https://iiiilucasiiii.github.io/Estudios-Profesionales/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium rounded-lg text-white bg-slate-900 hover:bg-slate-800 transition">🔗 Demo en Vivo</a>
+                        <a href="https://github.com/IIIILUCASIIII/Estudios-Profesionales" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium rounded-lg text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 transition">🛠️ Código</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-slate-900 text-white py-16">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold sm:text-4xl mb-4">¿Listo para impulsar la presencia web de tu marca?</h2>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-8">
+                Conversemos sobre tu visión. Desarrollaré un presupuesto adaptado e incluiremos una asesoría de arquitectura inicial sin coste alguno.
+            </p>
+            <a href="https://wa.me/34600215072?text=Hola%20Lucas,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20cotizar%20una%20p%C3%A1gina%20web%20para%20mi%20negocio." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl text-slate-900 bg-white hover:bg-slate-100 shadow-xl transition scale-100 hover:scale-105">
+                💬 Iniciar Consulta Directa
+            </a>
+            <p class="text-xs text-slate-500 mt-6">Zona de atención comercial prioritaria: España (+34)</p>
+        </div>
+    </footer>
+
+</body>
+</html>
