@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas | Desarrollo Web Freelance</title>
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts & FontAwesome -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -12,9 +14,9 @@
         :root {
             --bg-dark: #0f111a;
             --card-bg: #161925;
-            --accent-color: #00ffcc; /* Color llamativo tecnológico */
+            --accent-color: #00ffcc; 
             --text-light: #ffffff;
-            --text-muted: #8f94a6;
+            --text-muted: #cbd5e1; /* Color gris mucho más claro para que sea legible */
         }
 
         body {
@@ -49,6 +51,7 @@
             font-size: 2.2rem;
             font-weight: 700;
             margin-bottom: 10px;
+            color: var(--text-light);
         }
 
         .subtitle {
@@ -78,6 +81,14 @@
             margin-bottom: 15px;
         }
 
+        .card-title {
+            color: var(--text-light) !important;
+        }
+
+        .card-text {
+            color: var(--text-muted) !important; /* Arreglado el contraste de la descripción */
+        }
+
         .btn-preview {
             background: transparent;
             border: 1px solid var(--accent-color);
@@ -94,7 +105,7 @@
             color: var(--bg-dark);
         }
 
-        /* Botón de WhatsApp Flotante (Siempre visible en la esquina) */
+        /* Botón de WhatsApp Flotante */
         .whatsapp-float {
             position: fixed;
             bottom: 25px;
@@ -120,7 +131,6 @@
             color: white;
         }
 
-        /* Tooltip o texto junto al WhatsApp para incitar el clic */
         .whatsapp-text {
             position: fixed;
             bottom: 33px;
@@ -133,7 +143,7 @@
             font-weight: 600;
             box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
             z-index: 99;
-            pointer-events: none; /* No interfiere con clics */
+            pointer-events: none;
         }
 
         footer {
@@ -144,42 +154,89 @@
             text-align: center;
         }
 
-        /* Ajustes específicos para pantallas pequeñas (móviles) */
         @media (max-width: 576px) {
             h1 { font-size: 1.8rem; }
             .subtitle { font-size: 0.95rem; }
-            .whatsapp-text { display: none; } /* Ocultar texto del botón en móviles para no tapar */
+            .whatsapp-text { display: none; } 
         }
     </style>
 </head>
 <body>
 
+    <!-- Contenedor Principal Central -->
     <div class="container my-auto">
         
+        <!-- Header de Presentación Directa -->
         <header class="profile-header">
             <span class="profile-badge">DISEÑO & DESARROLLO WEB</span>
             <h1>Páginas Web Profesionales</h1>
             <p class="subtitle">Ayudo a empresas y profesionales a captar más clientes con sitios web rápidos, elegantes y adaptados a móviles.</p>
         </header>
 
+        <!-- Sección de Proyectos (Compacta en 1 sola fila) -->
         <main class="row g-4 justify-content-center mb-5">
             
+            <!-- PROYECTO 1: RESTAURANTE -->
             <div class="col-md-4">
                 <div class="card project-card p-4">
                     <div class="card-body d-flex flex-column justify-content-between p-0">
                         <div>
                             <div class="card-icon"><i class="fa-solid fa-utensils"></i></div>
                             <h5 class="card-title fw-bold mb-2">Sitio Web para Restaurante</h5>
-                            <p class="card-text text-muted small mb-4">Diseño gastronómico con menú interactivo por pestañas y sistema integrado para solicitudes de reserva de mesas.</p>
+                            <p class="card-text small mb-4">Diseño gastronómico con menú interactivo por pestañas y sistema integrado para solicitudes de reserva de mesas.</p>
                         </div>
-                        <a href="https://github.com/IIIILUCASIIII/Restaurante" target="_blank" class="btn btn-preview mt-auto">Ver Demo</a>
+                        <!-- Enlace corregido para ver la web real, no el código -->
+                        <a href="https://iiiilucasiiii.github.io/Restaurante/" target="_blank" class="btn btn-preview mt-auto">Ver Demo</a>
                     </div>
                 </div>
             </div>
 
+            <!-- PROYECTO 2: CLÍNICAS / SPAS -->
             <div class="col-md-4">
                 <div class="card project-card p-4">
                     <div class="card-body d-flex flex-column justify-content-between p-0">
                         <div>
                             <div class="card-icon"><i class="fa-solid fa-spa"></i></div>
-                            <h5 class="card-title fw-bold mb-2">Estética
+                            <h5 class="card-title fw-bold mb-2">Estética, Clínicas & Spas</h5>
+                            <p class="card-text small mb-4">Interfaz pulcra, relajante y sumamente profesional optimizada para la conversión y muestra de tratamientos de belleza.</p>
+                        </div>
+                        <a href="https://iiiilucasiiii.github.io/Centros-de-Est-tica-Cl-nicas-o-Spas/" target="_blank" class="btn btn-preview mt-auto">Ver Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROYECTO 3: ESTUDIOS PROFESIONALES -->
+            <div class="col-md-4">
+                <div class="card project-card p-4">
+                    <div class="card-body d-flex flex-column justify-content-between p-0">
+                        <div>
+                            <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+                            <h5 class="card-title fw-bold mb-2">Estudios Profesionales</h5>
+                            <p class="card-text small mb-4">Estructura corporativa sólida ideal para consultoras, abogados o agencias que buscan transmitir máxima confianza.</p>
+                        </div>
+                        <!-- Enlace corregido para ver la web real, no el código -->
+                        <a href="https://iiiilucasiiii.github.io/Estudios-Profesionales/" target="_blank" class="btn btn-preview mt-auto">Ver Demo</a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <span class="whatsapp-text d-none d-sm-block">¿Hablamos? Pide tu presupuesto</span>
+    <a href="https://wa.me/34600215072?text=Hola,%20vi%20tu%20portafolio%20y%20me%20gustaría%20pedir%20presupuesto%20para%20una%20página%20web." class="whatsapp-float" target="_blank" aria-label="Contacto por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Lucas Web Dev. Diseños optimizados de alto impacto.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
