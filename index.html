@@ -1,106 +1,222 @@
-<!-- Copia desde aquí para reemplazar esta sección en tu archivo -->
-<section style="background-color: #0b0f19; color: #ffffff; padding: 60px 20px; font-family: 'Inter', system-ui, -apple-system, sans-serif; position: relative;">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas | Desarrollo Web Freelance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Encabezado Principal -->
-    <div style="text-align: center; margin-bottom: 50px;">
-        <span style="background-color: rgba(0, 242, 154, 0.1); color: #00f29a; font-size: 12px; font-weight: bold; padding: 6px 16px; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px;">
-            Diseño & Desarrollo Web
-        </span>
-        <h1 style="font-size: 36px; font-weight: 800; margin-top: 20px; margin-bottom: 15px; letter-spacing: -0.5px;">
-            Páginas Web Profesionales
-        </h1>
-        <p style="color: #94a3b8; font-size: 16px; max-width: 650px; margin: 0 auto; line-height: 1.6;">
-            Ayudo a negocios locales y profesionales independientes a captar más clientes en internet con sitios web ultra rápidos, elegantes y perfectamente optimizados para móviles.
-        </p>
-    </div>
+    <style>
+        :root {
+            --bg-dark: #0f111a;
+            --card-bg: #161925;
+            --accent-color: #00ffcc; 
+            --text-light: #ffffff;
+            --text-muted: #cbd5e1;
+        }
 
-    <!-- Subtítulo de Soluciones -->
-    <div style="text-align: center; margin-bottom: 40px;">
-        <h2 style="font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">
-            Soluciones Reales Hechas a Medida
-        </h2>
-    </div>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            min-height: 100vh;
+        }
 
-    <!-- Contenedor de Tarjetas (Grid Responsivo) -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 1200px; margin: 0 auto; padding: 0 10px;">
+        /* Encabezado compacto */
+        .profile-header {
+            padding: 50px 0 30px 0;
+            text-align: center;
+        }
+
+        .profile-badge {
+            background: rgba(0, 255, 204, 0.1);
+            color: var(--accent-color);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 25px auto;
+        }
+
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 35px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Tarjetas de Proyectos */
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid #222638;
+            border-radius: 12px;
+            transition: transform 0.3s, border-color 0.3s;
+            height: 100%;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        .card-title {
+            color: var(--text-light) !important;
+        }
+
+        .card-text {
+            color: var(--text-muted) !important;
+        }
+
+        .btn-preview {
+            background: transparent;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            font-weight: 600;
+            padding: 8px 20px;
+            border-radius: 8px;
+            transition: all 0.3s;
+            width: 100%;
+        }
+
+        .btn-preview:hover {
+            background: var(--accent-color);
+            color: var(--bg-dark);
+        }
+
+        /* Botón de WhatsApp Flotante */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .whatsapp-text {
+            position: fixed;
+            bottom: 33px;
+            right: 95px;
+            background-color: #25d366;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            z-index: 99;
+            pointer-events: none;
+        }
+
+        @media (max-width: 576px) {
+            h1 { font-size: 1.9rem; }
+            .subtitle { font-size: 0.95rem; }
+            .whatsapp-text { display: none; } 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
         
-        <!-- Tarjeta 1: Restaurantes -->
-        <div style="background-color: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; min-height: 250px;">
-            <div>
-                <!-- Icono Cubiertos (SVG para máxima nitidez) -->
-                <div style="color: #00f29a; margin-bottom: 20px;">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-10.03C11.34 11.84 13 10.12 13 8V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/>
-                    </svg>
-                </div>
-                <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">
-                    Restaurantes & Gastronomía
-                </h3>
-                <p style="color: #94a3b8; font-size: 14px; line-height: 1.5; margin-bottom: 25px;">
-                    Menú interactivo por pestañas táctiles y un sistema integrado de reservas <strong style="color: #ffffff; font-weight: 600;">para que no pierdas ningún cliente</strong>, operativo las 24 horas.
-                </p>
-            </div>
-            <a href="https://github.com/IIIILUCASIIII/Restaurante" target="_blank" style="display: block; text-align: center; border: 1px solid #1f2937; color: #00f29a; font-weight: 600; font-size: 14px; padding: 12px; border-radius: 6px; text-decoration: none; transition: background 0.3s;">
-                Ver Demo En Vivo
-            </a>
-        </div>
+        <header class="profile-header">
+            <span class="profile-badge">DISEÑO & DESARROLLO WEB</span>
+            <h1>Páginas Web Profesionales</h1>
+            <p class="subtitle">Ayudo a negocios locales y profesionales independientes a captar más clientes en internet con sitios web ultra rápidos, elegantes y perfectamente optimizados para móviles.</p>
+        </header>
 
-        <!-- Tarjeta 2: Estética -->
-        <div style="background-color: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; min-height: 250px;">
-            <div>
-                <!-- Icono Hoja/Flor -->
-                <div style="color: #00f29a; margin-bottom: 20px;">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2C11.38 5.4 9 8.3 5.5 9.5 9 10.7 11.38 13.6 12 17c.62-3.4 3-6.3 6.5-7.5-3.5-1.2-5.88-4.1-6.5-7.5zm0 16.5c-.83 0-1.5.67-1.5 1.5h3c0-.83-.67-1.5-1.5-1.5z"/>
-                    </svg>
+        <section class="mb-5">
+            <h3 class="section-title">Soluciones Reales Hechas a Medida</h3>
+            <div class="row g-4 justify-content-center">
+                
+                <div class="col-md-4">
+                    <div class="card project-card p-4">
+                        <div class="card-body d-flex flex-column justify-content-between p-0">
+                            <div>
+                                <div class="card-icon"><i class="fa-solid fa-utensils"></i></div>
+                                <h5 class="card-title fw-bold mb-2">Restaurantes & Gastronomía</h5>
+                                <p class="card-text small mb-4">Menú interactivo por pestañas táctiles y un sistema integrado de reservas <strong>para que no pierdas ningún cliente, operativo las 24 horas</strong>.</p>
+                            </div>
+                            <a href="https://iiiilucasiiii.github.io/Restaurante/" target="_blank" class="btn btn-preview mt-auto">Ver Demo En Vivo</a>
+                        </div>
+                    </div>
                 </div>
-                <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">
-                    Estética, Clínicas & Spas
-                </h3>
-                <p style="color: #94a3b8; font-size: 14px; line-height: 1.5; margin-bottom: 25px;">
-                    Interfaz pulcra, relajante y de alta confianza, estructurada estratégicamente <strong style="color: #ffffff; font-weight: 600;">para convertir visitas digitales en citas agendadas</strong>.
-                </p>
-            </div>
-            <a href="https://iiiilucasiiii.github.io/Centros-de-Est-tica-Cl-nicas-o-Spas/" target="_blank" style="display: block; text-align: center; border: 1px solid #1f2937; color: #00f29a; font-weight: 600; font-size: 14px; padding: 12px; border-radius: 6px; text-decoration: none; transition: background 0.3s;">
-                Ver Demo En Vivo
-            </a>
-        </div>
 
-        <!-- Tarjeta 3: Estudios -->
-        <div style="background-color: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; min-height: 250px;">
-            <div>
-                <!-- Icono Maletín -->
-                <div style="color: #00f29a; margin-bottom: 20px;">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
-                    </svg>
+                <div class="col-md-4">
+                    <div class="card project-card p-4">
+                        <div class="card-body d-flex flex-column justify-content-between p-0">
+                            <div>
+                                <div class="card-icon"><i class="fa-solid fa-spa"></i></div>
+                                <h5 class="card-title fw-bold mb-2">Estética, Clínicas & Spas</h5>
+                                <p class="card-text small mb-4">Interfaz pulcra, relajante y de alta confianza, estructurada estratégicamente <strong>para convertir visitas digitales en citas agendadas</strong>.</p>
+                            </div>
+                            <a href="https://iiiilucasiiii.github.io/Centros-de-Est-tica-Cl-nicas-o-Spas/" target="_blank" class="btn btn-preview mt-auto">Ver Demo En Vivo</a>
+                        </div>
+                    </div>
                 </div>
-                <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">
-                    Estudios & Consultoras
-                </h3>
-                <p style="color: #94a3b8; font-size: 14px; line-height: 1.5; margin-bottom: 25px;">
-                    Diseño corporativo sólido y profesional premium, ideal para agencias o consultores que buscan <strong style="color: #ffffff; font-weight: 600;">transmitir la máxima autoridad en su sector</strong>.
-                </p>
+
+                <div class="col-md-4">
+                    <div class="card project-card p-4">
+                        <div class="card-body d-flex flex-column justify-content-between p-0">
+                            <div>
+                                <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+                                <h5 class="card-title fw-bold mb-2">Estudios & Consultoras</h5>
+                                <p class="card-text small mb-4">Diseño corporativo sólido y profesional premium, ideal para agencias o consultores que buscan <strong>transmitir la máxima autoridad en su sector</strong>.</p>
+                            </div>
+                            <a href="https://iiiilucasiiii.github.io/Estudios-Profesionales/" target="_blank" class="btn btn-preview mt-auto">Ver Demo En Vivo</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <a href="https://github.com/IIIILUCASIIII/Estudios-Profesionales" target="_blank" style="display: block; text-align: center; border: 1px solid #1f2937; color: #00f29a; font-weight: 600; font-size: 14px; padding: 12px; border-radius: 6px; text-decoration: none; transition: background 0.3s;">
-                Ver Demo En Vivo
-            </a>
-        </div>
+        </section>
 
     </div>
 
-    <!-- Botón Flotante de WhatsApp Opciones Exactas -->
-    <div style="position: fixed; bottom: 20px; right: 20px; display: flex; align-items: center; z-index: 9999; font-family: sans-serif;">
-        <!-- Globo de Texto -->
-        <div style="background-color: #25d366; color: white; font-size: 13px; font-weight: bold; padding: 8px 14px; border-radius: 8px; margin-right: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); white-space: nowrap; position: relative;">
-            ¿Hablamos? Pide tu presupuesto
-        </div>
-        <!-- Icono WhatsApp -->
-        <a href="https://wa.me/34678631572" target="_blank" style="background-color: #25d366; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-decoration: none;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.717-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.966C16.528 1.975 14.067.95 11.51.951c-5.44 0-9.865 4.369-9.87 9.802-.002 1.764.483 3.487 1.403 5.013l-.997 3.64 3.75-.973zm11.567-7.348c-.29-.145-1.71-.843-1.976-.94-.266-.097-.46-.145-.652.145-.192.289-.745.94-.913 1.134-.167.194-.336.218-.626.073-1.427-.714-2.353-1.254-3.293-2.872-.25-.426.25-.395.715-1.32.077-.155.039-.29-.019-.406-.058-.116-.46-1.11-.632-1.521-.167-.403-.35-.349-.48-.355l-.41-.007c-.145 0-.382.054-.58.27-.198.218-.758.741-.758 1.806 0 1.065.773 2.094.88 2.24 1.1 1.44 2.387 2.246 3.794 2.754.335.121.643.193.864.263.34.108.648.092.892.056.27-.04 1.71-.699 1.952-1.374.242-.674.242-1.253.17-1.374-.074-.121-.267-.194-.556-.34z"/>
-            </svg>
-        </a>
-    </div>
+    <span class="whatsapp-text d-none d-sm-block">¿Hablamos? Pide tu presupuesto</span>
+    <a href="https://wa.me/34600215072?text=Hola,%20vi%20tu%20portafolio%20y%20me%20gustaría%20pedir%20presupuesto%20para%20una%20página%20web." class="whatsapp-float" target="_blank" aria-label="Contacto por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
-</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
